@@ -1,0 +1,67 @@
+<@pp.setOutputEncoding encoding="UTF-8" />
+<@pp.renameOutputFile extension="html" />
+<#assign sitemap = sitemap.sitemap>
+
+<#function outputPathFor s>
+  <#if s?ends_with('/index.xml')>
+    <#return '/'+s?substring(0,s?length-9)>
+  <#elseif s == 'index.xml'>
+    <#return '/'>
+  <#else>
+    <#return '/'+s?substring(0,s?length-3)+'html'>
+  </#if>
+</#function>
+
+<#function pathTo s>
+  <#local p = pp.pathTo(s)>
+  <#if p == ''>
+    <#return './'>
+  <#else>
+    <#return p>
+  </#if>
+</#function>
+
+<#macro renderSitemapPages l>
+  <ul>
+  <#list l as p>
+    <li><a href="${pathTo(p.@path)}">${p.@title}</a>
+      <#if p.page?size != 0><@renderSitemapPages p.page /></#if>
+    </li>
+  </#list>
+  </ul>
+</#macro>
+
+<#assign outputPath = outputPathFor(pp.sourceFile)>
+<#assign pageTitle = sitemap["page[@path = '${outputPath}']"].@title>
+<#if outputPath == '/'>
+  <#assign localTitle = ''>
+<#else>
+  <#assign localTitle = ': '+pageTitle>
+</#if>
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <title>ScalaQuery${localTitle}</title>
+  <link href="${pp.pathTo('/style.css')}" media="screen" rel="Stylesheet" type="text/css"/>
+</head><body>
+  <div class="header">
+  <h1>ScalaQuery</h1>
+  <span class="headertxt">A type-safe database API for Scala</span>
+  <ul class="navbar"><#list sitemap["page[@navbar = 'true']"] as a>
+    <li><a<#if a.@path == outputPath> class="navcurrent"</#if> href="${pathTo(a.@path)}">${a.@title}</a></li></#list>
+  </ul>
+  </div>
+  <div class="body">
+    <#if pp.doc.*[0]?node_name == 'page'>${pp.doc.page.body.@@nested_markup}
+    <#else>
+      <h2 class="firsth">${pageTitle}</h2>
+	  <@renderSitemapPages sitemap.page />
+    </#if>
+  </div>
+  <div class="footer">
+    <span>ScalaQuery.org site &copy; 2010 <a href="http://szeiger.de">Stefan Zeiger</a>. All rights reserved.</span>
+    | <span><a href="http://github.com/szeiger/scala-query/blob/master/LICENSE.txt">ScalaQuery License</a></span>
+    | <span><a href="${pp.pathTo('/sitemap.html')}">Site Map</a></span>
+  </div>
+</body></html>

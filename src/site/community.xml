@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <body>
+
+<div class="tweetsright">
+<script src="http://widgets.twimg.com/j/2/widget.js"> </script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '#ScalaQuery OR #scala-query OR ScalaQuery',
+  interval: 6000,
+  title: 'Recent tweets mentioning ScalaQuery',
+  subject: '',
+  width: '300',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#f8f8f8',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#0050b0'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'all'
+  }
+}).render().start();
+</script></div>
+
+    <h2 class="firsth">Discuss</h2>
+    <p>Join the <a href="http://groups.google.com/group/scalaquery">ScalaQuery
+      group</a> at Google Groups to discuss ScalaQuery or get help with its use.</p>
+
+    <h2>Report Bugs</h2>
+    <p>Please use the <a href="http://github.com/szeiger/scala-query/issues">issue
+      tracker</a> at GitHub to report bugs and issues.</p>
+
+    <h2>Get Involved</h2>
+    <p>Even better than bug reports and feature requests are patches and pull requests
+      ;-) so clone the ScalaQuery git repository from
+      <a href="http://github.com/szeiger/scala-query">http://github.com/szeiger/scala-query</a>
+      and get started. </p>
+    <p>The only prerequisites are a
+      <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JRE</a> 5 or 6,
+      <a href="http://git-scm.com/">git</a>
+      (<a href="http://code.google.com/p/msysgit/">msysgit</a> for Windows)
+      and <a href="http://code.google.com/p/simple-build-tool/">sbt</a> 0.7.</p>
+	  <ol>
+	    <li>Clone the repository:
+<pre>C:\Users\szeiger\Desktop\test> <b>git clone git://github.com/szeiger/scala-query.git</b>
+Initialized empty Git repository in C:/Users/szeiger/Desktop/test/scala-query/.git/
+remote: Counting objects: 2967, done.
+remote: Compressing objects: 100% (859/859), done.
+remote: Total 2967 (delta 1487), reused 2688 (delta 1275)
+Receiving objects: 100% (2967/2967), 359.06 KiB | 188 KiB/s, done.
+Resolving deltas: 100% (1487/1487), done.
+</pre>
+        </li>
+        <li>Fetch dependencies, build and test:
+<pre>C:\Users\szeiger\Desktop\test> <b>cd scala-query</b>
+
+C:\Users\szeiger\Desktop\test\scala-query> <b>sbt update test</b>
+[...]
+[info] == test-finish ==
+[info] Passed: : Total 44, Failed 0, Errors 0, Passed 44, Skipped 0
+[info]
+[info] All tests PASSED.
+[...]
+[success] Build completed successfully.
+</pre>
+        </li>
+        <li>Congratulations, you have just built ScalaQuery and run all unit tests
+          against H2, SQLite and Derby (other DBMSs need to be installed separately).
+          Any changes you make will be tracked by git and can be pushed to a cloned
+          repository at github (for eventual merging into the master repository) or
+          sent as a patch.</li>
+	  </ol>
+  </body>
+</page>

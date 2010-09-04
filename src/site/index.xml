@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <body>
+    <h2 class="firsth">Overview</h2>
+    <p>ScalaQuery is an API / DSL (domain specific language) built on top of
+	<a href="http://java.sun.com/products/jdbc/overview.html">JDBC</a> for
+    accessing relational databases in <a href="http://www.scala-lang.org">Scala</a>.
+    It was designed with the following goals in mind:</p>
+	<table class="multicolumn"><tr>
+	  <th>A Scala API for database access</th>
+	  <th>Compile-time checking and type-safety</th>
+	  <th>Composable non-leaky abstractions</th>
+	</tr><tr>
+	  <td>The low-level JDBC API is powerful but comes with a lot of verbosity.
+        ScalaQuery was designed from the ground up to reduce the amount of
+        boilerplate required and make use of Scala's features to provide a
+        more natural fit for database access in a Scala environment.</td>
+	  <td>It is easy to get runtime errors from making mistakes with SQL syntax
+        or accessing columns with the wrong data type when you embed SQL strings in
+        your application. With ScalaQuery, all database entities have static types
+		and are manipulated with Scala methods so your database code can be checked
+		by the Scala compiler.</td>
+	  <td>ScalaQuery is based on relational algebra and query comprehensions which
+        provide an abstraction that can be composed similarly to what you can do with
+        Scala's collection classes, something which is not possible with plain SQL.
+        Unlike traditional ORMs, ScalaQuery never obscures when a database query is
+		performed and it does not rely on mutable state.</td>
+	</tr></table>
+    <p>ScalaQuery is easy to add to your project, commercial or non-commercial alike.
+      It is being made available under a liberal BSD-style
+      <a href="http://github.com/szeiger/scala-query/blob/master/LICENSE.txt">license</a>
+      and has no dependencies other then the Scala 2.8 library.</p>
+    <h2>News</h2>
+    <ul>
+      <li>2010-09-04 - Launch of the new <a href="http://scalaquery.org">ScalaQuery.org</a> web site</li>
+      <li>2010-09-01 - ScalaQuery now has a <a href="http://groups.google.com/group/scalaquery">mailing list</a> at Google Groups</li>
+    </ul>
+  </body>
+</page>

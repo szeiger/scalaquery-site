@@ -1,0 +1,11 @@
+sourceRoot: src/site
+outputRoot: target/site
+logFile: target/fmpp.log
+xmlRenderings: [
+    {
+        template: renderer/page.html
+    }
+]
+data: {
+    sitemap:xml( sitemap.xml )
+}

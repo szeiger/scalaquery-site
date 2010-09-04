@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <body>
+    <h2 class="firsth">Documentation</h2>
+    <h3>Wiki</h3>
+	Up-to-date documentation can be found in the
+    <a href="http://wiki.github.com/szeiger/scala-query/">ScalaQuery Wiki</a>
+    at GitHub.
+    <h3>API Documentation</h3>
+    <ul>
+      <li><a href="/doc/api/scalaquery-1.0.0-SNAPSHOT/">1.0.0-SNAPSHOT</a></li>
+    </ul>
+  </body>
+</page>

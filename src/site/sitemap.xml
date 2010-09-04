@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap>
+  <page   path="/"               navbar="true" title="Home" />
+  <page   path="/download.html"  navbar="true" title="Download" />
+  <page   path="/doc/"           navbar="true" title="Documentation" />
+  <page   path="/community.html" navbar="true" title="Community" />
+  <page   path="/sitemap.html"                 title="Site Map" />
+</sitemap>

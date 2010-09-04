@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 10px;
+  min-width: 980px;
+  background-color: #f6f6f6;
+  font: 11pt/16pt "Segoe UI","Lucida Grande","Lucida Sans Unicode",sans-serif;
+}
+
+.header, .body {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 920px;
+}
+
+.header {
+  padding: 10px 30px;
+  background-color: #285080;
+  color: #fffff8;
+  text-align: right;
+  height: 3.5em;
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #183060),
+    color-stop(1, #306090)
+  );
+  background-image: -moz-linear-gradient(
+    center bottom,
+    #183060 0%,
+    #306090 100%
+  );
+  box-shadow: 1px 1px 3px #808080;
+  -moz-box-shadow: 1px 1px 3px #808080;
+  -webkit-box-shadow: 1px 1px 3px #808080;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  float: left;
+  padding-top: 12px;
+  text-shadow: #ffff80 0px 0px 25px;
+}
+
+.headertxt {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  font-weight: bold;
+  text-shadow: #ffff80 0px 0px 20px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  display: inline;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #c0e0ff;
+  text-shadow: #b0d0ef 0px 0px 10px;
+  padding: 0 0.5em 2px 0.5em;
+  border: 1px solid #6090d0;
+  border-top: 0;
+  text-decoration: none;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.navbar a.navcurrent {
+  color: #fffff8;
+  border-color: #cfcfc8;
+  font-weight: bold;
+  text-shadow: #ffff80 0px 0px 20px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, #436883),
+    color-stop(1, #5e7b7f)
+  );
+  background-image: -moz-linear-gradient(
+    center bottom,
+    #436883 50%,
+    #5e7b7f 100%
+  );
+  box-shadow: 1px 1px 2px #7d927a;
+  -moz-box-shadow: 1px 1px 2px #7d927a;
+  -webkit-box-shadow: 1px 1px 2px #7d927a;
+}
+
+.navbar a:hover {
+  color: #fffff8;
+  text-shadow: #ffff80 0px 0px 20px;
+}
+
+.body {
+  padding: 30px;
+  min-height: 400px;
+  border: 1px solid #a0a0a0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 3px #c0c0c0;
+  -moz-box-shadow: 1px 1px 3px #c0c0c0;
+  -webkit-box-shadow: 1px 1px 3px #c0c0c0;
+  /*background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #f0f0f0),
+    color-stop(0.5, #ffffff)
+  );
+  background-image: -moz-linear-gradient(
+    center bottom,
+    #f0f0f0 0%,
+    #ffffff 50%
+  );*/
+}
+
+.body a { text-decoration: none; }
+.body a:link    { color: #0050b0; }
+.body a:visited { color: #8040a0; }
+.body a:active , .body a:hover {
+  color: #0050b0;
+  text-decoration: underline;
+}
+.body a[name]:hover { color: inherit; text-decoration: inherit; }
+
+h2 {
+  margin-top: 2em;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #4080c0;
+  color: #303030;
+}
+
+.firsth {
+  margin-top: 0;
+}
+
+.multicolumn {
+  display: block;
+  width: 100%;
+  border-spacing: 0;
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+.multicolumn td, .multicolumn th  {
+  border-left: 1px solid #c0c0c0;
+  padding: 0 1em;
+  width: 25%;
+}
+
+.multicolumn td:first-child, .multicolumn th:first-child {
+  border-left: 0;
+}
+
+.multicolumn td {
+  padding-top: 1em;
+  text-align: justify;
+  vertical-align: top;
+}
+
+.multicolumn th {
+  color: #002030;
+  font-style: italic;
+  font-size: 1.1em;
+  text-shadow: #60b0ff 0px 0px 25px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #c0c0c0;
+  padding: 0.5em;
+  font: 11pt/16pt Consolas,Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  overflow: auto;
+}
+
+pre b {
+  text-shadow: #60b0ff 0px 0px 25px;
+  color: #002030;
+}
+
+.footer {
+  padding: 15px 30px 30px 30px;
+  color: #808080;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footer span { margin: 0 0.5em; }
+
+.footer a { text-decoration: none; }
+.footer a:link, .footer a:visited { color: #0050b0; }
+.footer a:active , .footer a:hover {
+  color: #0050b0;
+  text-decoration: underline;
+}
+
+.tweetsright {
+  float: right;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  background: white;
+}
+
+.twtr-widget {
+  border: 1px solid #a0a0a0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
