@@ -40,7 +40,9 @@ new TWTR.Widget({
 
     <h2 class="firsth">Discuss</h2>
     <p>Join the <a href="http://groups.google.com/group/scalaquery">ScalaQuery
-      group</a> at Google Groups to discuss ScalaQuery or get help with its use.</p>
+      group</a> at Google Groups to discuss ScalaQuery or get help with its use.
+      There's also a <a href="http://stackoverflow.com/questions/tagged/scalaquery">ScalaQuery
+      tag on StackOverflow</a>.</p>
 
     <h2>Report Bugs</h2>
     <p>Please use the <a href="http://github.com/szeiger/scala-query/issues">issue
