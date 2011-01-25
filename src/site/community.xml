@@ -81,7 +81,7 @@ C:\Users\szeiger\Desktop\test\scala-query> <b>sbt update test</b>
 </pre>
         </li>
         <li>Congratulations, you have just built ScalaQuery and run all unit tests
-          against H2, SQLite and Derby (other DBMSs need to be installed separately).
+          against H2, SQLite, Derby and HSQLDB (other DBMSs need to be installed separately).
           Any changes you make will be tracked by git and can be pushed to a cloned
           repository at github (for eventual merging into the master repository) or
           sent as a patch.</li>

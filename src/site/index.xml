@@ -30,8 +30,13 @@
       It is being made available under a liberal BSD-style
       <a href="http://github.com/szeiger/scala-query/blob/master/LICENSE.txt">license</a>
       and has no dependencies other then the Scala 2.8 library.</p>
+    <p>The current release is ScalaQuery 0.9.0 for Scala 2.8.0, with full support for the
+      following database systems: PostgreSQL, MySQL, H2, HSQLDB/HyperSQL, Derby/JavaDB.
+      SQLite support is under development. Accessing other database systems is possible,
+      with a reduced feature set.</p>
     <h2>News</h2>
     <ul>
+      <li>2010-09-16 - <a href="download.html">ScalaQuery 0.9.0</a> released</li>
       <li>2010-09-04 - Launch of the new <a href="http://scalaquery.org">ScalaQuery.org</a> web site</li>
       <li>2010-09-01 - ScalaQuery now has a <a href="http://groups.google.com/group/scalaquery">mailing list</a> at Google Groups</li>
     </ul>

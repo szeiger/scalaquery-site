@@ -2,42 +2,39 @@
 <page>
   <body>
     <h2 class="firsth">Download</h2>
-    There are no versioned releases of ScalaQuery yet but snaphost builds are published
-    regularly. You can declare them as dependencies in sbt or Maven projects or download
-    the JARs directly.
+    The current release is ScalaQuery 0.9.0 for Scala 2.8.0. You can declare it as a
+    dependency in sbt or Maven projects or download the JARs directly.
 
     <h3>sbt</h3>
-    Add the Scala-Tools snapshots repository and the ScalaQuery dependency to your project:
-<pre>  val scalaToolsSnapshots = "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
-  val scalaQuery = "com.novocode" %% "scala-query" % "1.0.0-SNAPSHOT"
+    Add the ScalaQuery dependency to your project:
+<pre>  val scalaQuery = "org.scalaquery" %% "scalaquery" % "0.9.0"
 </pre>
 
     <h3>Maven</h3>
-    Add the Scala-Tools snapshots repository and the ScalaQuery dependency to your POM:
+    Add the Scala-Tools repository and the ScalaQuery dependency to your POM:
 <pre>  &lt;dependencies>
     &lt;dependency>
-      &lt;groupId>com.novocode&lt;/groupId>
-      &lt;artifactId>scala-query_2.8.0&lt;/artifactId>
-      &lt;version>1.0.0-SNAPSHOT&lt;/version>
+      &lt;groupId>org.scalaquery&lt;/groupId>
+      &lt;artifactId>scalaquery_2.8.0&lt;/artifactId>
+      &lt;version>0.9.0&lt;/version>
     &lt;/dependency>
   &lt;/dependencies>
   &lt;repositories>
     &lt;repository>
-      &lt;id>scala-tools.snapshot&lt;/id>
-      &lt;name>Scala Tools Maven2 Snapshots Repository&lt;/name>
-      &lt;url>http://scala-tools.org/repo-snapshots&lt;/url>
-      &lt;snapshots>
-        &lt;updatePolicy>daily&lt;/updatePolicy>
-      &lt;/snapshots>
+      &lt;id>ScalaToolsMaven2Repository&lt;/id>
+      &lt;name>Scala-Tools Maven2 Repository&lt;/name>
+      &lt;url>http://scala-tools.org/repo-releases&lt;/url>
     &lt;/repository>
   &lt;/repositories>
 </pre>
 
     <h3>JARs</h3>
     You can download the JARs directly from the
-    <a href="http://scala-tools.org/repo-snapshots/com/novocode/scala-query_2.8.0/1.0.0-SNAPSHOT/">Scala-Tools snapshots repository</a>.
+    <a href="http://scala-tools.org/repo-releases/org/scalaquery/">Scala-Tools repository</a>.
 
+    <h3>Source Code</h3>
+    The source code can be found <a href="http://github.com/szeiger/scala-query">on GitHub</a>.
+    Most development is happening in the <i>master</i> branch. Releases are generally made
+    from the <i>stable</i> branch and tagged with the version number.
   </body>
 </page>
-
-
