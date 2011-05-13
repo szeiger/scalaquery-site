@@ -2,14 +2,23 @@
 <page>
   <body>
     <h2 class="firsth">Documentation</h2>
+
     <h3>Wiki</h3>
-	Up-to-date documentation can be found in the
+    Up-to-date documentation can be found in the
     <a href="http://wiki.github.com/szeiger/scala-query/">ScalaQuery Wiki</a>
     at GitHub.
+
+    <h3>Examples</h3>
+    The <a href="https://github.com/szeiger/scalaquery-examples">ScalaQuery Examples</a>
+    repository contains a ready-to-run sbt project with simple, documented ScalaQuery
+    programs.
+
     <h3>API Documentation</h3>
     <ul>
+      <li><a href="/doc/api/scalaquery-0.9.4/">Version 0.9.4</a></li>
       <li><a href="/doc/api/scalaquery-0.9.1/">Version 0.9.1</a></li>
       <li><a href="/doc/api/scalaquery-0.9.0/">Version 0.9.0</a></li>
     </ul>
-  </body>
+
+    </body>
 </page>
