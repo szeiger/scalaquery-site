@@ -13,6 +13,16 @@
     repository contains a ready-to-run sbt project with simple, documented ScalaQuery
     programs.
 
+    <h3>Slides</h3>
+    Slides for the <a href="http://www.herbstcampus.de/hc11/program/sessions.html#45">ScalaQuery talk</a>
+    by Stefan Zeiger at <a href="http://www.herbstcampus.de/hc11/index.html">Herbstcampus 2011</a>
+    (in German, with some English text and lots of code) are available here:
+    <ul>
+      <li>in PowerPoint format (789 kB): <a href="/herbstcampus2011/Relationell%20auch%20ohne%20SQL.pptx">Relationell auch ohne SQL.pptx</a> -
+      Use this version if you can because there are lots of animations on the slides which are lost in the PDF</li>
+      <li>in PDF format (1.85 MB): <a href="/herbstcampus2011/Relationell%20auch%20ohne%20SQL.pdf">Relationell auch ohne SQL.pdf</a></li>
+    </ul>
+
     <h3>API Documentation</h3>
     <ul>
       <li><a href="/doc/api/scalaquery-0.9.4/">Version 0.9.4</a></li>
