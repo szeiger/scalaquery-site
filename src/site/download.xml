@@ -2,12 +2,12 @@
 <page>
   <body>
     <h2 class="firsth">Download</h2>
-    The current release is ScalaQuery 0.9.4 for Scala 2.8.0, 2.8.1 and 2.9.0. You can declare it as a
+    The current release is ScalaQuery 0.9.5 for Scala 2.8.1 and 2.9.0-1. You can declare it as a
     dependency in sbt or Maven projects or download the JARs directly.
 
     <h3>sbt</h3>
     Add the ScalaQuery dependency to your project:
-<pre>  val scalaQuery = "org.scalaquery" %% "scalaquery" % "0.9.4"
+<pre>  val scalaQuery = "org.scalaquery" %% "scalaquery" % "0.9.5"
 </pre>
 
     <h3>Maven</h3>
@@ -16,7 +16,7 @@
     &lt;dependency>
       &lt;groupId>org.scalaquery&lt;/groupId>
       &lt;artifactId>scalaquery_2.8.1&lt;/artifactId>
-      &lt;version>0.9.4&lt;/version>
+      &lt;version>0.9.5&lt;/version>
     &lt;/dependency>
   &lt;/dependencies>
   &lt;repositories>
