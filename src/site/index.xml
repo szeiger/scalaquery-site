@@ -36,6 +36,7 @@
        Accessing other database systems is possible, with a reduced feature set. </p>
     <h2>News</h2>
     <ul>
+      <li>2012-03-16 - ScalaQuery 0.10.0-M1 released</li>
       <li>2011-08-20 - <a href="http://implicit.ly/scalaquery-095">ScalaQuery 0.9.5</a> released</li>
       <li>2011-05-13 - <a href="http://implicit.ly/scalaquery-094-for-scala-290">ScalaQuery 0.9.4</a> released</li>
       <li>2011-04-30 - <a href="http://implicit.ly/scalaquery-093">ScalaQuery 0.9.3</a> released</li>
